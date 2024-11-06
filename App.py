@@ -21,7 +21,7 @@ styles = {
         "justify-content": "center",
     },
     "img" : {
-        "position": "absolute",
+        "position": "relative",
         "left":"-20px",
         "font-size": "15px",
         "top":"4px",
