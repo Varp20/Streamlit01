@@ -22,7 +22,7 @@ styles = {
     },
     "img" : {
         "position": "fixed",
-        "left":"20px",
+        "left":"0px",
         "font-size": "15px",
         "width":"44px",
         "height":"44px",
