@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from click import style
-from jinja2.sandbox import unsafe
-from numpy.ma.extras import unique
-from setuptools.package_index import unique_values
-from streamlit import columns
 
 
 class Project1:
