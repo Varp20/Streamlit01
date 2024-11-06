@@ -22,7 +22,7 @@ class Project1:
 
             column= st.selectbox("Choose a column for filtering", df.columns)
 
-            unique_values=df["Stress level"].unique()
+            unique_values=df[column].unique()
             selected_values= st.multiselect(f"Select values for {column}", options=unique_values, default=unique_values)
 
             filtered_df=df[df[column].isin(selected_values)]
