@@ -25,8 +25,8 @@ styles = {
         "left":"-20px",
         "font-size": "15px",
         "top":"4px",
-        "width":"40px",
-        "height":"40px",
+        "width":"60px",
+        "height":"60px",
     },
     "span": {
         "display":"block",
