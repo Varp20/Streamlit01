@@ -24,9 +24,8 @@ styles = {
         "position": "relative",
         "left":"-20px",
         "font-size": "15px",
-        "top":"4px",
-        "width":"60px",
-        "height":"60px",
+        "width":"44px",
+        "height":"44px",
     },
     "span": {
         "display":"block",
