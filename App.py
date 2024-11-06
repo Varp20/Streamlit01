@@ -22,10 +22,10 @@ styles = {
     },
     "img" : {
         "position": "absolute",
-        "left":"-20px",
         "font-size": "15px",
         "width":"44px",
         "height":"44px",
+        "bottom":"0px",
     },
     "span": {
         "display":"block",
