@@ -1,7 +1,9 @@
 import streamlit as st
-from Pages import Home, Project1, Project2, Project3
-from streamlit_navigation_bar import st_navbar as navbar
+from tornado.options import options
 
+from Pages import Home, Project1, Project2, Project3
+from streamlit_navigation_bar import st_navbar as navbar, st_navbar
+import os
 from PIL import Image
 import pandas as pd
 import numpy as np
@@ -9,7 +11,8 @@ import numpy as np
 image = Image.open('img/WhatsApp.png')
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
-pages =["Home","Project1","Project2","Project3"]
+logo_path=os.path.join(os.path.dirname(__file__), 'img', 'WhatsApp.svg')
+pages =[" ","Home","Project1","Project2","Project3"]
 
 styles = {
     "nav" : {
@@ -39,8 +42,7 @@ styles = {
     },
 }
 
-page = navbar (pages, styles = styles)
-
+page = st_navbar(pages, styles = styles, logo_path=logo_path, options=options)
 if page =="Home":
     Home.Home().app()
 elif page =="Project1":
