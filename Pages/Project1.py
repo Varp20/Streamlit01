@@ -21,6 +21,13 @@ class Project1:
         if upload is not None:
             df=load_data(upload)
             st.dataframe(df, height=400, width=600)
+
+            stress_levels=df["Stress level"].unique()
+            selected_levels= st.multiselect("Select Stress Level/Levels", options=stress_levels, default=stress_levels)
+
+            filtered_df=df[df['Stress_level'].isin(selected_levels)]
+
+            st.dataframe(filtered_df, height=400, width=600)
         else:
             st.warning("Please upload a CSV file")
 
