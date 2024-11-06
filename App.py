@@ -44,8 +44,8 @@ styles = {
 
 page = st_navbar(pages,
     styles = styles,
-    logo_path=logo_path,
-    options=options)
+    logo_path=logo_path)
+
 if page =="Home":
     Home.Home().app()
 elif page =="Project1":
