@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 from click import style
 from jinja2.sandbox import unsafe
+from numpy.ma.extras import unique
+from setuptools.package_index import unique_values
+from streamlit import columns
 
 
 class Project1:
@@ -22,10 +25,12 @@ class Project1:
             df=load_data(upload)
             st.dataframe(df, height=400, width=600)
 
-            stress_levels=df["Stress level"].unique()
-            selected_levels= st.multiselect("Select Stress Level/Levels", options=stress_levels, default=stress_levels)
+            column= st.selectbox("Choose a column for filtering", df.columns)
 
-            filtered_df=df[df['Stress_level'].isin(selected_levels)]
+            unique_values=df["Stress level"].unique()
+            selected_values= st.multiselect(f"Select values for {column}", options=unique_values, default=unique_values)
+
+            filtered_df=df[df[column].isin(selected_values)]
 
             st.dataframe(filtered_df, height=400, width=600)
         else:
