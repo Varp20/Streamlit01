@@ -26,7 +26,7 @@ class Project1:
 
         st.markdown("""<style>
                     h1{
-                    color: blue;
+                    color: Yellow;
                     font-size:18px;
                     text-align:center;
                    }
