@@ -78,7 +78,7 @@ class Project2:
                 while self.cap.isOpened() and not stop_button:
                     ret, frame = self.cap.read()
                     if not ret:
-                        st.write("Access os denied!")
+                        st.write("Access is denied!")
                         break
 
                     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
