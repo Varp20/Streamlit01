@@ -17,7 +17,7 @@ class Project2:
 
         source_option = st.selectbox(
             "Pick up source of the video stream",
-            ("Mobile camera", "Youtube link", "local drive", "Web-camera", "RTSP")
+            ("Mobile camera", "Youtube link", "Local drive", "Web-camera", "RTSP")
         )
 
         video_url = None
