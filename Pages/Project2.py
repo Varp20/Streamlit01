@@ -6,7 +6,7 @@ import tempfile
 import numpy as np
 from pathlib import Path
 from yt_dlp import YoutubeDL
-from streamlit_webrtc import webtrc_streamer, WebRtcMode
+from streamlit_webrtc import webrtc_streamer, WebRtcMode
 
 class Project2:
     def __int__(self):
