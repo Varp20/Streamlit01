@@ -4,6 +4,7 @@ import streamlit as st
 import cv2
 import tempfile
 import numpy as np
+import urllib.request
 from pathlib import Path
 from yt_dlp import YoutubeDL
 from streamlit_webrtc import webrtc_streamer, WebRtcMode
