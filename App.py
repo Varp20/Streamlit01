@@ -7,9 +7,9 @@ import os
 from PIL import Image
 import pandas as pd
 import numpy as np
-st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 image = Image.open('img/WhatsApp.png')
+st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 logo_path=os.path.join(os.path.dirname(__file__), 'img', 'WhatsApp.svg')
 pages =[" ","Home","Project1","Project2","Project3"]
