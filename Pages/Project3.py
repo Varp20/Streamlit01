@@ -69,7 +69,7 @@ class Project3:
 
         st.markdown("""<style>
                     h1 {
-                    color: white;
+                    color: yellow;
                     font-size: 20px;
                     text-align: center;
                     }
